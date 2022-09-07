@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+    {% block title %}
+      Twain Labs
+    {% endblock %}
+    {% block body %}
+    <form name="regi" action="{{ url_for('uregister') }}" method="post">
+        <h2>Registration Form</h2>
+         
+        <label>First Name :</label>
+        <input type="text" name="fname"><br/>
+         
+        <label>Last Name :</label>
+        <input type="text" name="lname"><br/>
+         
+        <label id="pwd">Password :</label>
+        <input type="password" name="pass"><br/>
+         
+        <label >Email :</label>
+        <input type="text" name="email"><br/>
+         
+        <label>Mobile No :</label>
+        <input type="text" name="mno"><br/>
+         
+        <label>City:</label>
+         
+        <select name="ct" id="r8">
+        <option>Select</option>
+        <option value="Pune">Pune</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Bangalore">Bangalore</option>
+        <option value="gorakhpur">Gorakhpur</option>
+        <option value="Lucknow">Lucknow</option>
+        <option value="Raigad">Raigad</option>
+        <option value="Bellari">Bellari</option>
+        <option value="Kolhapur">Kolhapur</option>
+        <option value="Bhopal">Bhopal</option>
+        </select><br/><br/>
+         
+        <label>State:</label>
+         
+        <select name="st">
+        <option>Select</option>
+        <option value="Karnataka">Karnataka</option>
+        <option value="Uttar Pradesh">Uttar Pradesh</option>
+        <option value="Mahashtra">Madhya Pradesh</option>
+        <option value="Tamil Nadu">Tamil Nadu</option>
+        <option value="Kerela">Kerela</option>
+        <option value="Telangana">Telangana</option>
+        <option value="Andhra Pradesh">Andhra Pradesh</option>
+        <option value="Himachal Pradesh">Himachal Pradesh</option>
+        <option value="Goa">Goa</option>
+        </select><br/><br/>
+
+        <button type="submit" value="Submit" id="button">Register</button>
+        <a href="{{ url_for('index') }}">Back to Home</a>
+         
+        </form>
+    {% endblock %}

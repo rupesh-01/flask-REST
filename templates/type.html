@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+    {% block title %}
+      Twain Labs
+    {% endblock %}
+
+    {% block body %}
+    <a href="{{ url_for('ushow') }}">click here for User registration</a><br>
+    <a href="{{ url_for('docshow') }}">click here for Doctor registration</a><br>
+    <a href="{{ url_for('hosshow') }}">click here for Hospital registration</a><br>
+    <a href="{{ url_for('labshow') }}">click here for Lab registration</a><br>
+    {% endblock %}"
